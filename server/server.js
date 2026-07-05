@@ -12,6 +12,7 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/workspaces', require('./routes/workspaces'));
 app.use('/api/boards', require('./routes/boards'));
 app.use('/api/lists', require('./routes/lists'));
+app.use('/api/cards', require('./routes/cards'))
 
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected'))
